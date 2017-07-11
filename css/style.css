@@ -77,6 +77,10 @@ html, body{
    color:#34495E;
  }
 
+ .container.hero {
+   background-image: url('../images/hero-image.png');
+ }
+
  header .hero {
    padding: 0;
    width: 100%;
@@ -89,7 +93,7 @@ html, body{
 
  header .hero h1 {
    position: absolute;
-   top: 85px;
+   top: 80px;
    left: 0;
    right: 0;
    font-size:50px;
@@ -100,7 +104,7 @@ html, body{
    font-size: 22px;
    line-height: 26px;
    font-weight: 100;
-   top: 165px;
+   top: 170px;
    left: 0;
    right: 0;
  }
@@ -110,12 +114,17 @@ html, body{
   top: 340px;
   left: 0;
   right: 0;
+  background-color: #93C14A;
+  box-shadow: 0px 2px 0px 0px #000000;
+  border: 2px solid #93C14A;
+}
+header .hero p.or {
+  color: #FFFFFF;
+  font-size: 10px;
+  position: relative;
+  top: 350px;
 }
 
-header .hero img {
-  display: block;
-  width: 100%
-}
 
  /* BUTTONS */
  .btn {
@@ -159,7 +168,7 @@ header .hero img {
 
 /* PRICING */
 .pricing {
-  background: #FFFFFF
+  background: #324119;
   background-size:cover;
   text-align: center;
   padding:4em 0;
@@ -170,9 +179,11 @@ header .hero img {
 .pricing h2 {
   font-size: 40px;
   margin-top: 5px;
+  color: #FFFFFF;
 }
 .pricing p {
   font-size: 18px;
+  color: #FFFFFF;
 }
 .pricing ul {
   margin:0 auto;
@@ -323,15 +334,14 @@ li.one-fourth.second {
      padding: 0;
      margin: 0 auto;
      width: 100%;
+     height: 100%;
      text-align: center;
      display: block;
      position: relative;
      overflow: hidden;
      background-color: #324119;
    }
-   .signup-bottom img {
-     max-width: 100%;
-   }
+
 
  .signup-bottom h2 {
      position: absolute;
@@ -362,6 +372,15 @@ li.one-fourth.second {
      border: none;
      box-shadow: 0px 2px 0px 0px #000000;
  }
+.table {
+     display: flex;
+     justify-content: center;
+     top: 100px;
+     margin-top: 100px;
+}
+.table input {
+  width: 400px;
+}
 
 /* FOOTER */
 footer ul {
