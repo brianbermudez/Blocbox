@@ -48,10 +48,9 @@ html, body{
    color:#FFFFFF;
  }
  header nav {
-   padding:.5em 0;
+   padding: 15px 0px 2px 0px;
  }
  header nav ul {
-   display: inline;
    text-align: right;
    float:right;
    margin:0;
@@ -79,8 +78,10 @@ html, body{
 
  .container.hero {
    background-image: url('../images/hero-image.png');
+   max-width: 1280px;
    width: 100%;
-   height: 100vh;
+   min-height: 100vh;
+   height: 100%;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -146,7 +147,6 @@ header a.btn.facebook {
   box-shadow: 0px 2px 4px 0px #000000;
   border: 2px solid #3B5998;
   margin-right: 10px;
-  margin: 0 auto;
 }
 header i.fa.fa-facebook-official::before {
   font-size: 25px;
@@ -165,6 +165,7 @@ header .hero p.or {
   margin-top: 25px;
   color: #FFFFFF;
   font-size: 10px;
+
 }
 
 
@@ -459,8 +460,8 @@ li.one-fourth.second {
 footer ul {
   padding: 0;
 }
-footer li {
-  float: left;
+footer nav ul > li {
+  margin: 0;
   font-size: 12px;
 }
 footer a {
@@ -480,6 +481,19 @@ footer img.logo {
   float: right;
   margin-top: 20px;
 }
+
+@media (min-width: 992px){
+   footer{
+     height: 100px;
+   }
+   footer p, footer nav ul{
+     padding: 2em 0;
+     text-align: left;
+   }
+   footer .logo{
+     padding: 2em 0 2em 1.5em;
+   }
+ }
 
  @media (min-width: 768px) {
    .container {
@@ -507,6 +521,13 @@ footer img.logo {
  @media (min-width: 1200px) {
    .container {
      width: 1170px;
+   }
+ }
+
+ @media only screen and (max-width: 991px) {
+   header nav.container {
+     vertical-align: middle;
+
    }
  }
 
@@ -726,17 +747,120 @@ footer img.logo {
    margin:5px 0 0;
  }
 
- .right-nav {
+ nav#right-nav.right-nav {
    height: 100vh;
-   width:190px;
+   width:278px;
+   overflow-y: scroll;
    color:#FFFFFF;
-   background: #475B49;
-   float: right;
+   background: #F7F7F7;
    position: fixed;
-   margin-right: 0px;
-   display:block;
+   z-index: 1000;
+   top: 0;
+   right: 0;
+   bottom: 0;
  }
-
+ nav#right-nav.right-nav h1 {
+   font-size: 36px;
+   font-family: "Playfair Display";
+   color: rgba(0, 0, 0, 0.75);
+   margin-bottom: 30px;
+   text-align: center;
+ }
+nav#right-nav.right-nav .boxes p {
+  color: #000000;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+nav#right-nav.right-nav .boxes {
+  text-align: center;
+}
+nav#right-nav.right-nav .square {
+  width: 40px;
+  height: 40px;
+  background-color: #93C14A;
+  border: 1px solid #000000;
+  display: inline-block;
+}
+nav#right-nav.right-nav p.boxes-2 {
+  margin-top: 10px;
+  font-size: 12px;
+}
+nav#right-nav.right-nav .boxes a {
+  font-size: 12px;
+  color: #4990E2;
+  margin-top: 10px;
+  display: block;
+}
+nav#right-nav.right-nav .boxes hr {
+  margin-top: 30px;
+  width: 220px;
+  border-color: #B2CB8B;
+}
+nav#right-nav.right-nav .storage {
+  text-align: center;
+}
+nav#right-nav.right-nav .storage .loader {
+  margin: 0 auto;
+  border: 16px solid #FFFFFF;
+  border-radius: 50%;
+  border-top: 16px solid;
+  border-top-left-radius:50%;
+  border-top-color: #93C14A;
+  border-right-color: #93C14A;
+  width: 150px;
+  height: 150px;
+}
+nav#right-nav.right-nav .storage p {
+  color: #000000;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+nav#right-nav.right-nav p.storage-2 {
+  font-size: 12px;
+}
+nav#right-nav.right-nav .storage a {
+  font-size: 12px;
+  color: #4990E2;
+  margin-top: 10px;
+  display: block;
+}
+nav#right-nav.right-nav .storage hr {
+  margin-top: 30px;
+  width: 220px;
+  border-color: #B2CB8B;
+}
+nav#right-nav.right-nav .collab {
+  text-align: center;
+}
+nav#right-nav.right-nav .collab i.fa.fa-user-o {
+  font-size: 30px;
+}
+nav#right-nav.right-nav .collab p {
+  color: #000000;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+nav#right-nav.right-nav p.collab-2 {
+  font-size: 12px;
+}
+nav#right-nav.right-nav .collab a {
+  font-size: 12px;
+  color: #4990E2;
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 24px;
+}
+nav#right-nav.right-nav .collab hr {
+  margin-top: 30px;
+  width: 220px;
+  border-color: #B2CB8B;
+}
  /* Dashboard-IMAGES */
  .left-nav-bar ul {
    list-style-type: none;
