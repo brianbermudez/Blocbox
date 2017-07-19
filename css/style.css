@@ -36,7 +36,7 @@ html, body{
    clear: both;
  }
  .one-half, .one-third, .one-fourth {
-   width:96%;
+
    float:left;
    position:relative;
    min-height: 1px;
@@ -499,12 +499,8 @@ footer img.logo {
    .container {
      width: 750px;
    }
-   header .site-logo {
-     display: block;
-     margin: 0 auto;
-   }
  }
- @media (min-width: 992px) {
+ @media (min-width: 991px) {
    .container {
      width: 970px;
    }
@@ -524,12 +520,212 @@ footer img.logo {
    }
  }
 
- @media only screen and (max-width: 991px) {
-   header nav.container {
-     vertical-align: middle;
+ @media only screen and (max-width: 590px) {
+   footer nav.link-block.middle-footer-block.one-third {
+     font-size: 10px;
+     float: left;
+     margin-top: 0px;
+   }
+   footer .right-footer-block.one-third{
+     float: right;
+     position: relative;
+     top: -60px;
+   }
+   section.testimonials img {
+     margin-left: 40px;
+   }
+   section.testimonials p {
+     font-size: 12px;
+   }
+   section.pricing ul.container {
+     display: flex;
+     justify-content: space-between;
+   }
+   .box .btn {
+      width: 40px;
+      margin: 0 auto;
+
+    }
+    section.pricing p.small {
+      font-size: 10px;
+    }
+    section.pricing p {
+      font-size: 9px;
+    }
+    header input {
+      width: 180px;
+      border: 1px solid black;
+      padding: 4px;
+    }
+    header .container.hero p {
+      font-size: 12px;
+    }
+
+ }
+
+ @media only screen and (max-width: 679px) and (min-width: 591px) {
+   section.testimonials img {
+     margin-left: 50px;
+   }
+   footer .right-footer-block.one-third{
+     float: right;
+   }
+   footer nav.link-block.middle-footer-block.one-third {
+     font-size: 10px;
+     float: right;
+   }
+   section.pricing ul.container {
+     display: flex;
+     justify-content: space-between;
+   }
+   .box .btn {
+      width: 85px;
+      margin: 0 auto;
+      font-size: 14px;
+    }
+    section.testimonials p {
+      font-size: 12px;
+    }
+    section.pricing p {
+      font-size: 11px;
+    }
+    section.pricing p.small {
+      font-size: 10px;
+    }
+    header .container.hero p {
+      font-size: 14px;
+    }
+    header input {
+      width: 210px;
+      border: 1px solid black;
+      padding: 4px;
+    }
+ }
+
+ @media only screen and (max-width: 743px) and (min-width: 680px) {
+   footer .left-footer-block.one-third {
+     font-size: 10px;
+     float: left;
+   }
+   footer nav.link-block.middle-footer-block.one-third {
+     font-size: 10px;
+     float: right;
+   }
+   footer .right-footer-block.one-third{
+     float: right;
+   }
+   section.testimonials img {
+     margin-left: 62px;
+   }
+   section.pricing ul.container {
+     display: flex;
+     justify-content: space-between;
+   }
+   .box .btn {
+      width: 120px;
+      margin: 0 auto;
+      font-size: 14px;
+    }
+    section.testimonials p {
+      font-size: 13px;
+    }
+    section.pricing p {
+      font-size: 12px;
+    }
+    header .container.hero p {
+      font-size: 16px;
+    }
+ }
+
+ @media only screen and (max-width: 990px) and (min-width: 744px) {
+   li.one-third .box{
+     width: 100%;
 
    }
+   section.pricing ul.container {
+     display: flex;
+     justify-content: space-between;
+   }
+   section.pricing p {
+     font-size: 12px;
+   }
+   .box .btn {
+      width: 160px;
+      margin: 0 auto;
+    }
+    section.pricing p.small{
+      font-size: 11px;
+    }
+    section.testimonials p {
+      font-size: 13px;
+    }
+    section.testimonials img {
+      margin-left: 62px;
+    }
+    footer .left-footer-block.one-third {
+      margin-left: 0px;
+    }
+    footer .right-footer-block.one-third {
+      float: right;
+    }
+    footer nav.link-block.middle-footer-block.one-third{
+      padding-top: 11px;
+    }
+  }
+
+ @media only screen and (max-width: 1199px) and (min-width: 991px) {
+   .box .btn {
+      width: 200px;
+      margin: 0 auto;
+    }
+    footer nav ul > li {
+      float: left;
+    }
+    footer nav.link-block.middle-footer-block.one-third {
+      width: 31%;
+      float: left;
+      vertical-align: middle;
+      padding-top: 8px;
+    }
+    footer .right-footer-block.one-third {
+      width: 25%;
+      margin-bottom: 0px;
+    }
+    footer .right-footer-block.one-third img.logo {
+      margin-top: 9px;
+    }
+    section.benefits p {
+      font-size: 14px;
+    }
+    section.pricing p {
+      font-size: 14px;
+    }
+    section.pricing p.small {
+      font-size: 12px;
+    }
+    section.testimonials p {
+      font-size: 14px;
+    }
+    section.testimonials p.name {
+      font-size: 12px;
+    }
+}
+ @media screen and (min-width: 1200px) {
+   footer nav ul > li {
+     float: left;
+   }
+   footer nav.link-block.middle-footer-block.one-third {
+     margin-top: 10px;
+   }
+   footer .right-footer-block.one-third {
+     margin-bottom: 0px;
+   }
+   footer .right-footer-block.one-third img.logo {
+     margin-top: 9px;
+   }
  }
+
+
 
  /* DASHBOARD */
  .dashboard {
