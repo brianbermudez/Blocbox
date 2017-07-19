@@ -854,7 +854,7 @@ footer img.logo {
  }
  .item-box {
    display:block;
-   height:230px;
+   height:184px;
    background: #FFFFFF;
    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
    position: relative;
@@ -942,6 +942,12 @@ footer img.logo {
    line-height: 18px;
    margin:5px 0 0;
  }
+ .dash-row1 {
+    display: inline-block;
+}
+.dash-row1 .content-item {
+
+}
 
  nav#right-nav.right-nav {
    height: 100vh;
