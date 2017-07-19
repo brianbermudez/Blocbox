@@ -14,21 +14,113 @@
  <link rel="stylesheet" href="css/style.css">
  <link rel="stylesheet" href="css/font-awesome.css">
 
-</head>
-
-<body class="dashboard-images">
-  <h1>Logo Goes Here</h1>
-  <div class=left-nav-bar>
-    <ul>
-      <li><a href="#allitems">All Items</a></li>
-      <li><a class="active" href="#images">Images</a></li>
-      <li><a href="#notes">Notes</a></li>
-      <li><a href="#links">Links</a></li>
-    </ul>
-  </div>
+ </head>
 
 
+ <body class="dashboard">
+    <!-- LEFT NAV -->
+    <nav id="left-nav" class="left-nav">
+      <a href="#" class="site-logo"><img src="images/site-logo.png" /></a>
+      <div class="items">
+        <p>Items</p>
+        <ul>
+          <li><a href="#"><i class="fa fa-th-large"></i> All Items</a></li>
+          <li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
+          <li><a class="active" href="#"><i class="fa fa-picture-o"></i> Images</a></li>
+          <li><a href="#"><i class="fa fa-link"></i> Links</a></li>
+        </ul>
+        <p>Boxes</p>
+        <ul>
+          <li><a href="#"><i class="fa fa-inbox"></i> Landing Pages</a></li>
+          <li><a href="#"><i class="fa fa-inbox"></i> BB Photos</a></li>
+          <li><a href="#"><i class="fa fa-plus-square-o"></i> Add a new box</a></li>
+        </ul>
+      </div>
+      <div class="settings">
+      <img src="images/me.png">
+      <p>Brian Bermudez</p>
+      <a href="#"><i class="fa fa-cog"></i></a>
+    </div>
+   </nav>
 
-</body>
+   <main role="main">
+   <!-- Benefits -->
+   <section class="content">
+     <div class="container">
+       <div class="header">
+         <h1>Images</h1>
+         <a href="#" class="btn">+ Add Image</a>
+       </div>
+     </div>
+     <div class="row-1">
+        <img src="images/DSLR-Coffee-Mug.png">
+        <img src="images/ketchup.png">
+        <img src="images/office.png">
+     </div>
+     <div class="row-2">
+        <img src="images/six.png">
+        <img src="images/camera.png">
+        <img src="images/skate.png">
+     </div>
+     <div class="row-3">
+        <img src="images/vegas.png">
+        <img src="images/beach.png">
+        <img src="images/looper.png">
+     </div>
+     <div class="row-4">
+        <img src="images/sf.png">
+        <img src="images/sheep.png">
+        <img src="images/5.png">
+     </div>
+   </section>
+
+
+   <nav id="right-nav" class="right-nav">
+     <h1>Usage</h1>
+
+      <div class="boxes">
+        <p>BOXES</p>
+       <div class="square"></div>
+       <div class="square"></div>
+       <div class="square"></div>
+       <div class="square"></div>
+       <div class="square" style="background-color: #FFFFFF;"></div>
+       <p class="boxes-2">You have used four of your five<br>total boxes.</p>
+       <a href="">Get More Boxes!</a>
+       <hr>
+     </div>
+
+     <div class="storage">
+       <p>STORAGE</p>
+       <div class="loader"></div>
+
+      <p class="storage-2">You have used 1GB of your <br>total 2GB of storage.</p>
+      <a href="">Get More Storage!</a>
+      <hr>
+    </div>
+
+    <div class="collab">
+     <p>COLLABORATORS</p>
+      <i class="fa fa-user-o" style="color: #93C14A;"; aria-hidden="true"></i>
+      <i class="fa fa-user-o" style="color: #93C14A"; aria-hidden="true"></i>
+      <i class="fa fa-user-o" style="color: #93C14A"; aria-hidden="true"></i>
+      <i class="fa fa-user-o" style="color: #000000"; aria-hidden="true"></i>
+      <i class="fa fa-user-o" style="color: #000000"; aria-hidden="true"></i>
+      <br>
+      <i class="fa fa-user-o" style="color: #000000"; aria-hidden="true"></i>
+      <i class="fa fa-user-o" style="color: #000000"; aria-hidden="true"></i>
+      <i class="fa fa-user-o" style="color: #000000"; aria-hidden="true"></i>
+      <i class="fa fa-user-o" style="color: #000000"; aria-hidden="true"></i>
+      <i class="fa fa-user-o" style="color: #000000"; aria-hidden="true"></i>
+     <p class="collab-2">You have used 3 of your<br>total 10 collaborators.</p>
+     <a href="">Get More Collaborators!</a>
+
+   </div>
+  </nav>
+
+ </body>
+
+
+
 
 </html>

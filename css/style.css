@@ -1083,3 +1083,26 @@ nav#right-nav.right-nav .collab hr {
    background-color: #FFFFFF;
    color: #93C14A;
  }
+ .header a.btn {
+   margin-right: 277px;
+   margin-top: 8px;
+ }
+ .row-1 {
+   display: inline-block;
+   margin-left: 20px;
+   margin-bottom: 10px;
+}
+.row-2 {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.row-3 {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.row-4 {
+  display: inline-block;
+  margin-left: 20px;
+}
