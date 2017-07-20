@@ -909,15 +909,12 @@ footer img.logo {
      margin:0 1% 25px;
    }
 }
-
 .item-box > img {
-   position:absolute;
-   height:100%;
-   width:auto;
-   top:0;
-   left:0;
-   right:0;
- }
+  position: relative;
+  right: 30px;
+  bottom: 21px;
+}
+
  .item-box h2 {
    font-family: 'Lato', Helvetica, Arial, sans-serif;
    font-weight: 700;
@@ -943,11 +940,10 @@ footer img.logo {
    margin:5px 0 0;
  }
  .dash-row1 {
-    display: inline-block;
-}
-.dash-row1 .content-item {
+   display: inline-block;
 
 }
+
 
  nav#right-nav.right-nav {
    height: 100vh;
