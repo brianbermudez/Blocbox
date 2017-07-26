@@ -732,13 +732,71 @@ footer img.logo {
    background:#B2CB8B;
  }
  .left-nav {
-   height: 100vh;
-   width:190px;
+   height: 100%;
+   width:280px;
    color:#FFFFFF;
    background: #475B49;
    float:left;
-   position: fixed;
+   position: absolute;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(-280px,0);
+   -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+   -o-transform: translate(-280px,0); /** Opera **/
+   -moz-transform: translate(-280px,0); /** Firefox **/
+}
+.left-nav.open {
    display:block;
+   width:280px;
+   background: #475B49;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(0,0);
+   -webkit-transform: translate(0,0); /** Chrome & Safari **/
+   -o-transform: translate(0,0); /** Opera **/
+   -moz-transform: translate(0,0); /** Firefox **/
+   z-index: 100;
+ }
+ .hamburger {
+   position:absolute;
+   z-index: 1000;
+   background: #FFFFFF;
+   color: #93C14A;
+   text-decoration: none;
+   font-size: 22px;
+   padding: 10px 15px;
+   border-radius: 4px;
+   left: 5px;
+   top: 15px;
+ }
+ @media (min-width:992px) {
+   .left-nav {
+     height: 100vh;
+     width:190px;
+     color:#FFFFFF;
+     background: #475B49;
+     float:left;
+     position: fixed;
+     display:block;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .left-nav.open {
+     width:14.66666667%;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .hamburger {
+     display:none;
+   }
  }
  .left-nav .site-logo {
    padding:18px 0;
@@ -913,6 +971,7 @@ footer img.logo {
   position: relative;
   right: 30px;
   bottom: 21px;
+  width: auto;
 }
 
  .item-box h2 {
@@ -941,8 +1000,9 @@ footer img.logo {
  }
  .dash-row1 {
    display: inline-block;
-
+   margin-right: 20px;
 }
+
 
 
  nav#right-nav.right-nav {
@@ -1086,7 +1146,7 @@ nav#right-nav.right-nav .collab hr {
    color: #93C14A;
  }
  .header a.btn {
-   margin-right: 270px;
+   margin-right: 273px;
    margin-top: 8px;
  }
  .row-1 {
