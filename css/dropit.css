@@ -77,7 +77,7 @@
  ul.settings.menu.dropit {
      list-style: none;
  	padding: 0;
- 	margin: 15px 0 0;
+ 	margin-bottom: 15px 0 0;
    float: right;
    display: inline-block;
    transform:rotateX(180deg);
@@ -103,7 +103,7 @@
    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
    border-radius: 4px;
    margin-left: 35px;
-   margin-top: 35px;
+   margin-top: 45px;
  }
  ul.settings.menu.dropit .dropit-open .dropit-submenu:after {
    content: " ";
@@ -123,6 +123,10 @@
   }
   ul.settings.menu.dropit .dropit-open .dropit-submenu li.dropit-trigger:last-child {
    margin-bottom: 0px;
+  }
+  ul.settings.menu.dropit .dropit-open .dropit-submenu li i.fa.fa-cog {
+    margin-right: 103px;
+    margin-top: -1px;
   }
   ul.settings.menu.dropit .dropit-open .dropit-submenu li a {
    color:#000000;
