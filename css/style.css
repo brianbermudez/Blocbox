@@ -873,6 +873,9 @@ footer img.logo {
    margin-right:10px;
    margin-top:8px;
  }
+ .left-nav .settings i.fa.fa-cog:hover {
+   color: #475B49;
+ }
  .left-nav .items p {
    font-family: "Playfair Display";
  }
